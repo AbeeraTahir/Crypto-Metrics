@@ -18,6 +18,7 @@ const CoinsList = () => {
       {coins.map((coin) => (
         <li key={coin.id}>
           <Coin
+            id={coin.id}
             icon={coin.icon}
             name={coin.name}
             price={coin.price}
