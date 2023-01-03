@@ -19,6 +19,7 @@ const CoinsList = () => {
   };
 
   const searchedCoin = coins.filter((coin) => coin.name.toLowerCase()
+    .match(search.toLowerCase()) || coin.symbol.toLowerCase()
     .match(search.toLowerCase()));
 
   return (
