@@ -6,15 +6,24 @@ import { getCoinDetails } from '../redux/CoinDetails/coinDetialsSlice';
 const CoinDetailsPage = () => {
   const dispatch = useDispatch();
   const params = useParams();
-  const coins = useSelector((state) => state.details.coinDetails);
+  const coinDetails = useSelector((state) => state.details.coinDetails);
 
   useEffect(() => {
     dispatch(getCoinDetails(params.id));
   }, [dispatch, params.id]);
 
-  console.log(coins);
   return (
-    <div>CoinDetailsPage</div>
+    <div>
+
+      <ul>
+        <li>{coinDetails.name}</li>
+        <li>{coinDetails.symbol}</li>
+        <li>{coinDetails.rank}</li>
+        <li>{coinDetails.price}</li>
+        <li>{coinDetails.priceChange1d}</li>
+        <li>{coinDetails.marketCap}</li>
+      </ul>
+    </div>
   );
 };
 
