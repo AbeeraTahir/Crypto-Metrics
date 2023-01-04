@@ -1,0 +1,32 @@
+header {
+  display: flex;
+  padding: 0.8em 0.4em;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--light-blue);
+}
+
+header img {
+  width: 25px;
+  height: 25px;
+  margin-right: 0.4em;
+  margin-top: 0.2em;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  gap: 0.2em;
+}
+
+.left h1 {
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: var(--text-color);
+}
+
+.left img {
+  width: 30px;
+  height: 30px;
+  margin-top: 5px;
+}
