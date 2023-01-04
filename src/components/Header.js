@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import back from '../images/arrow_back.svg';
+import back from '../assets/arrow_back.svg';
 import '../styles/Header.css';
 import menu from '../assets/menu.png';
 
