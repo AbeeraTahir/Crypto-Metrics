@@ -42,29 +42,16 @@ const CoinsList = () => {
         {searchedCoin.map((coin) => (
           <Link to={`/details/${coin.id}`} key={coin.id}>
             <div className="coin-card">
-              <div className="heading">
-                <h2>
-                  {coin.rank}
-                  .
-                  {' '}
-                  {coin.name}
-                </h2>
-              </div>
               <div className="coin-logo">
                 <img src={coin.icon} alt="coin icon" />
               </div>
               <div className="coin-desc">
+                <h2>{coin.name}</h2>
                 <p>
                   Price:
-                  {' '}
+                  {' $'}
                   {coin.price < 1000 ? coin.price.toFixed(2) : (coin.price / 1000).toFixed(1)}
                   {coin.price > 1000 ? 'K' : ''}
-                </p>
-                <p>
-                  Market Cap:
-                  {' '}
-                  {(coin.marketCap / 1000000000).toFixed(1)}
-                  B
                 </p>
               </div>
             </div>
