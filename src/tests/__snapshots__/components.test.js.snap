@@ -6,148 +6,14 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="coin-details"
-      >
-        <div
-          class="hero"
-        >
-          <img
-            alt="coin-icon"
-          />
-          <div
-            class="hero-head"
-          >
-            <h2 />
-          </div>
-        </div>
-        <div
-          class="details"
-        >
-          <h2>
-             
-            Details
-          </h2>
-          <ul>
-            <li>
-              <span>
-                Name:
-              </span>
-              <span />
-            </li>
-            <li>
-              <span>
-                Symbol:
-              </span>
-              <span />
-            </li>
-            <li>
-              <span>
-                Rank:
-              </span>
-              <span />
-            </li>
-            <li>
-              <span>
-                Price to USD:
-              </span>
-              <span>
-                 ~$
-                NaN
-              </span>
-            </li>
-            <li>
-              <span>
-                Daily Change:
-              </span>
-              <span>
-                %
-              </span>
-            </li>
-            <li>
-              <span>
-                Market Cap:
-              </span>
-              <span>
-                NaN
-                B
-              </span>
-            </li>
-          </ul>
-        </div>
-      </div>
+        class="loader"
+      />
     </div>
   </body>,
   "container": <div>
     <div
-      class="coin-details"
-    >
-      <div
-        class="hero"
-      >
-        <img
-          alt="coin-icon"
-        />
-        <div
-          class="hero-head"
-        >
-          <h2 />
-        </div>
-      </div>
-      <div
-        class="details"
-      >
-        <h2>
-           
-          Details
-        </h2>
-        <ul>
-          <li>
-            <span>
-              Name:
-            </span>
-            <span />
-          </li>
-          <li>
-            <span>
-              Symbol:
-            </span>
-            <span />
-          </li>
-          <li>
-            <span>
-              Rank:
-            </span>
-            <span />
-          </li>
-          <li>
-            <span>
-              Price to USD:
-            </span>
-            <span>
-               ~$
-              NaN
-            </span>
-          </li>
-          <li>
-            <span>
-              Daily Change:
-            </span>
-            <span>
-              %
-            </span>
-          </li>
-          <li>
-            <span>
-              Market Cap:
-            </span>
-            <span>
-              NaN
-              B
-            </span>
-          </li>
-        </ul>
-      </div>
-    </div>
+      class="loader"
+    />
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],
@@ -209,56 +75,14 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="coins-container"
-      >
-        <img
-          alt="banner"
-          src="banner.jpg"
-        />
-        <div
-          class="search-field"
-        >
-          <input
-            placeholder="Search cryptocurrency"
-            type="search"
-            value=""
-          />
-          <img
-            alt="search icon"
-            src="find.svg"
-          />
-        </div>
-        <div
-          class="coins-list"
-        />
-      </div>
+        class="loader"
+      />
     </div>
   </body>,
   "container": <div>
     <div
-      class="coins-container"
-    >
-      <img
-        alt="banner"
-        src="banner.jpg"
-      />
-      <div
-        class="search-field"
-      >
-        <input
-          placeholder="Search cryptocurrency"
-          type="search"
-          value=""
-        />
-        <img
-          alt="search icon"
-          src="find.svg"
-        />
-      </div>
-      <div
-        class="coins-list"
-      />
-    </div>
+      class="loader"
+    />
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],
@@ -328,25 +152,17 @@ Object {
           >
             <img
               alt="back"
-              src="arrow-back-ios.svg"
+              src="arrow_back.svg"
             />
           </a>
           <h1>
             Cryptocurrency
           </h1>
         </div>
-        <div
-          class="right"
-        >
-          <img
-            alt="mic"
-            src="mic.svg"
-          />
-          <img
-            alt="settings"
-            src="settings.svg"
-          />
-        </div>
+        <img
+          alt="menu"
+          src="menu.png"
+        />
       </header>
     </div>
   </body>,
@@ -360,25 +176,17 @@ Object {
         >
           <img
             alt="back"
-            src="arrow-back-ios.svg"
+            src="arrow_back.svg"
           />
         </a>
         <h1>
           Cryptocurrency
         </h1>
       </div>
-      <div
-        class="right"
-      >
-        <img
-          alt="mic"
-          src="mic.svg"
-        />
-        <img
-          alt="settings"
-          src="settings.svg"
-        />
-      </div>
+      <img
+        alt="menu"
+        src="menu.png"
+      />
     </header>
   </div>,
   "debug": [Function],
