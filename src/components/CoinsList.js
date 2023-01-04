@@ -49,7 +49,7 @@ const CoinsList = () => {
                 <h2>{coin.name}</h2>
                 <p>
                   Price:
-                  {' $'}
+                  {' ~$'}
                   {coin.price < 1000 ? coin.price.toFixed(2) : (coin.price / 1000).toFixed(1)}
                   {coin.price > 1000 ? 'K' : ''}
                 </p>

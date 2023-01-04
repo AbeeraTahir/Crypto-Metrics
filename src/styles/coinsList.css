@@ -42,34 +42,32 @@
   border: 1px solid black;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 1em;
   padding: 1em;
 }
 
 .coin-logo {
-  height: 120px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  height: 100px;
 }
 
 .coin-logo img {
-  width: 80%;
-  height: 120px;
+  width: 96px;
+  height: 96px;
 }
 
 .coin-desc {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 0.1em;
-  align-items: flex-end;
 }
 
 .coin-desc h2 {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
-  font-size: 1.4rem;
-  width: 100%;
-  text-align: end;
+  font-size: 1.3rem;
 }
