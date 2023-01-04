@@ -2,6 +2,9 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { getCoins } from '../redux/AllCoins/coinSlice';
+import banner from '../images/banner.jpg';
+import searchIcon from '../images/find.svg';
+import '../styles/coinsList.css';
 
 const CoinsList = () => {
   const dispatch = useDispatch();
@@ -15,6 +18,7 @@ const CoinsList = () => {
   }, [dispatch, coins.length]);
 
   const handleChange = (e) => {
+    e.preventDefault();
     setSearch(e.target.value);
   };
 
@@ -23,23 +27,46 @@ const CoinsList = () => {
     .match(search.toLowerCase()));
 
   return (
-    <div>
-      <input
-        type="search"
-        placeholder="Search here"
-        onChange={handleChange}
-        value={search}
-      />
-      <div>
+    <div className="coins-container">
+      <img src={banner} alt="banner" />
+      <div className="search-field">
+        <input
+          type="search"
+          placeholder="Search cryptocurrency"
+          onChange={handleChange}
+          value={search}
+        />
+        <img src={searchIcon} alt="search icon" />
+      </div>
+      <div className="coins-list">
         {searchedCoin.map((coin) => (
           <Link to={`/details/${coin.id}`} key={coin.id}>
-            <div>
-              <img src={coin.icon} alt="coin icon" />
-              <h2>{coin.name}</h2>
-              <p>
-                {(coin.price / 1000).toFixed(1)}
-                K
-              </p>
+            <div className="coin-card">
+              <div className="heading">
+                <h2>
+                  {coin.rank}
+                  .
+                  {' '}
+                  {coin.name}
+                </h2>
+              </div>
+              <div className="coin-logo">
+                <img src={coin.icon} alt="coin icon" />
+              </div>
+              <div className="coin-desc">
+                <p>
+                  Price:
+                  {' '}
+                  {coin.price < 1000 ? coin.price.toFixed(2) : (coin.price / 1000).toFixed(1)}
+                  {coin.price > 1000 ? 'K' : ''}
+                </p>
+                <p>
+                  Market Cap:
+                  {' '}
+                  {(coin.marketCap / 1000000000).toFixed(1)}
+                  B
+                </p>
+              </div>
             </div>
           </Link>
         ))}

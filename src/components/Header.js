@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import mic from '../images/mic.svg';
 import gear from '../images/settings.svg';
 import back from '../images/arrow-back-ios.svg';
@@ -7,7 +8,9 @@ import '../styles/Header.css';
 const Header = () => (
   <header>
     <div className="left">
-      <img src={back} alt="back" />
+      <Link to="/">
+        <img src={back} alt="back" />
+      </Link>
       <h1>Cryptocurrency</h1>
     </div>
     <div className="right">
