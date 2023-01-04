@@ -102,8 +102,7 @@ Install this project using the following command:
 
 To run the project, execute the following command:
 
-- `npm run build`
-- `npm start`
+`npm start`
 
 ### Run tests
 
