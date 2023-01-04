@@ -1,9 +1,8 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
-import fetchCoinDetails from './fetchCoinDetailsAPI';
 
 export const getCoinDetails = createAsyncThunk('details/fetchCoinDetails', async (id) => {
-  const coinDetails = await fetchCoinDetails(id);
-  const { coin } = coinDetails;
+  const response = await fetch(`https://api.coinstats.app/public/v1/coins/${id}`);
+  const { coin } = await response.json();
   return coin;
 });
 

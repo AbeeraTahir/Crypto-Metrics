@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import back from '../images/arrow_back.svg';
 import '../styles/Header.css';
+import menu from '../assets/menu.png';
 
 const Header = () => (
   <header>
@@ -11,6 +12,7 @@ const Header = () => (
       </Link>
       <h1>Cryptocurrency</h1>
     </div>
+    <img src={menu} alt="menu" />
   </header>
 );
 

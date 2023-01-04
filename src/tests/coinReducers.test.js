@@ -1,4 +1,4 @@
-import coinReducer from '../redux/AllCoins/coinSlice';
+import coinReducer from '../redux/coinSlice';
 
 const mockCoinList = [
   {

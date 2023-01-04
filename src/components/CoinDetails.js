@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useParams } from 'react-router-dom';
-import { getCoinDetails } from '../redux/CoinDetails/coinDetialsSlice';
+import { getCoinDetails } from '../redux/coinDetialsSlice';
 import '../styles/coinDetails.css';
 import '../styles/spinner.css';
 
@@ -25,11 +25,7 @@ const CoinDetails = () => {
     <div className="coin-details">
       <div className="hero">
         <img src={coinDetails.icon} alt="coin-icon" />
-        <div className="hero-head">
-          <h2>
-            {coinDetails.name}
-          </h2>
-        </div>
+        <h2>{coinDetails.name}</h2>
       </div>
       <div className="details">
         <h2>
@@ -53,22 +49,31 @@ const CoinDetails = () => {
           <li>
             <span>Price to USD</span>
             <span>
-              {' ~$'}
+              {' $'}
               {coinDetails.price < 1000
                 ? coinDetails.price.toFixed(2) : (coinDetails.price / 1000).toFixed(1)}
               {coinDetails.price > 1000 ? 'K' : ''}
             </span>
           </li>
           <li>
-            <span>Daily Change:</span>
+            <span>Daily Change</span>
             <span>
               {coinDetails.priceChange1d}
               %
             </span>
           </li>
           <li>
+            <span>Volume</span>
+            <span>
+              $
+              {(coinDetails.volume / 1000000000).toFixed(1)}
+              B
+            </span>
+          </li>
+          <li>
             <span>Market Cap</span>
             <span>
+              $
               {(coinDetails.marketCap / 1000000000).toFixed(1)}
               B
             </span>

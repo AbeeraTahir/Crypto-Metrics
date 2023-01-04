@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
-import { getCoins } from '../redux/AllCoins/coinSlice';
-import banner from '../images/banner.jpg';
-import searchIcon from '../images/find.svg';
+import { getCoins } from '../redux/coinSlice';
+import banner from '../assets/banner.jpg';
+import searchIcon from '../assets/find.svg';
 import '../styles/coinsList.css';
 import '../styles/spinner.css';
 
@@ -57,9 +57,14 @@ const CoinsList = () => {
                 <h2>{coin.name}</h2>
                 <p>
                   Price:
-                  {' ~$'}
+                  {' $'}
                   {coin.price < 1000 ? coin.price.toFixed(2) : (coin.price / 1000).toFixed(1)}
                   {coin.price > 1000 ? 'K' : ''}
+                </p>
+                <p>
+                  Rank:
+                  {' '}
+                  {coin.rank}
                 </p>
               </div>
             </div>
