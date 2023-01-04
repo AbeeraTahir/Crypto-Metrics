@@ -7,26 +7,26 @@ header {
 }
 
 header img {
-  width: 28px;
-  height: 28px;
-  margin-right: 0.3em;
+  width: 25px;
+  height: 25px;
+  margin-right: 0.4em;
   margin-top: 0.2em;
 }
 
 .left {
   display: flex;
   align-items: center;
-  gap: 0.4em;
+  gap: 0.2em;
 }
 
 .left h1 {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: 800;
   color: var(--text-color);
 }
 
 .left img {
-  width: 35px;
-  height: 35px;
+  width: 30px;
+  height: 30px;
   margin-top: 5px;
 }
