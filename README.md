@@ -33,9 +33,9 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 Cryptocurrency Metrics <a name="about-project"></a>
+# 📖 Crypto Metrics <a name="about-project"></a>
 
-**Cryptocurrency Metrics** is a mobile web application that uses [CoinStats API](https://cryptocointracker.com/api/coinstats) to display the list of cryptocurrencies and their market capitalization. Built with React and Redux.
+**Crypto Metrics** is a mobile web application that uses [CoinStats API](https://cryptocointracker.com/api/coinstats) to display the list of cryptocurrencies and their market capitalization. Built with React and Redux.
 
 ## 🛠 Built With <a name="built-with"></a>
 
