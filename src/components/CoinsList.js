@@ -30,13 +30,13 @@ const CoinsList = () => {
     <div className="coins-container">
       <img src={banner} alt="banner" />
       <div className="search-field">
+        <img src={searchIcon} alt="search icon" />
         <input
           type="search"
           placeholder="Search cryptocurrency"
           onChange={handleChange}
           value={search}
         />
-        <img src={searchIcon} alt="search icon" />
       </div>
       <div className="coins-list">
         {searchedCoin.map((coin) => (

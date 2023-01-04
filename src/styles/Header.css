@@ -1,35 +1,25 @@
 header {
   display: flex;
-  padding: 0.8em 0.6em;
+  padding: 0.8em 0.4em;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid black;
+  background-color: var(--light-blue);
 }
 
 .left {
   display: flex;
   align-items: center;
-  gap: 0.6em;
+  gap: 0.4em;
 }
 
 .left h1 {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   font-weight: 800;
+  color: var(--text-color);
 }
 
 .left img {
-  width: 20px;
-  height: 20px;
-  margin-top: 4px;
-}
-
-.right {
-  display: flex;
-  align-items: center;
-  gap: 0.8em;
-}
-
-.right img {
-  width: 20px;
-  height: 20px;
+  width: 35px;
+  height: 35px;
+  margin-top: 5px;
 }

@@ -27,23 +27,23 @@ const CoinDetailsPage = () => {
         <h2>
           {coinDetails.name}
           {' '}
-          Details
+          Details:
         </h2>
         <ul>
           <li>
-            <span>Name:</span>
+            <span>Name</span>
             <span>{coinDetails.name}</span>
           </li>
           <li>
-            <span>Symbol:</span>
+            <span>Symbol</span>
             <span>{coinDetails.symbol}</span>
           </li>
           <li>
-            <span>Rank:</span>
+            <span>Rank</span>
             <span>{coinDetails.rank}</span>
           </li>
           <li>
-            <span>Price to USD:</span>
+            <span>Price to USD</span>
             <span>
               {' ~$'}
               {coinDetails.price < 1000
@@ -59,7 +59,7 @@ const CoinDetailsPage = () => {
             </span>
           </li>
           <li>
-            <span>Market Cap:</span>
+            <span>Market Cap</span>
             <span>
               {(coinDetails.marketCap / 1000000000).toFixed(1)}
               B

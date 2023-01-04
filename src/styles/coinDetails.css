@@ -2,11 +2,12 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 1em;
+  gap: 3em;
+  color: var(--text-color);
+  padding: 1em;
 }
 
 .hero {
-  width: 100%;
   height: 250px;
   display: flex;
   flex-direction: column;
@@ -14,6 +15,8 @@
   align-items: center;
   padding: 2em 0;
   gap: 1em;
+  border-radius: 10px;
+  background-color: var(--light-blue);
 }
 
 .hero img {
@@ -34,11 +37,9 @@
 }
 
 .details {
-  border: 1px solid black;
-  padding: 0 1em;
   display: flex;
   flex-direction: column;
-  gap: 1.2em;
+  gap: 1.5em;
 }
 
 .details h2 {
@@ -47,15 +48,19 @@
 
 .details ul {
   list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
 }
 
 .details ul li {
-  padding: 0.8em 0;
+  padding: 0.9em 0.6em;
   font-size: 1.2rem;
-  border-bottom: 1px solid #ccc;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-radius: 8px;
+  background-color: var(--light-blue);
 }
 
 .details ul li span:first-child {

@@ -14,8 +14,9 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border: 1px solid black;
   margin: 0 0.3em;
+  padding: 1em 0.8em;
+  background-color: white;
 }
 
 .search-field input {
@@ -23,29 +24,31 @@
   border: none;
   outline: none;
   width: 100%;
-  padding: 1em;
+  padding: 0 0.8em;
 }
 
 .search-field img {
   width: 20px;
   height: 20px;
-  margin: 0 0.6em;
 }
 
 .coins-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-  gap: 0.2em;
+  gap: 0.5em;
+  padding: 0.5em;
 }
 
 .coin-card {
-  border: 1px solid black;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 1em;
   padding: 1em;
+  background-color: var(--light-blue);
+  border-radius: 10px;
+  max-width: 180px;
 }
 
 .coin-logo {
@@ -69,5 +72,6 @@
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
-  font-size: 1.3rem;
+  max-width: 160px;
+  font-size: 1.25rem;
 }
