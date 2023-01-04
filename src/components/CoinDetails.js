@@ -3,15 +3,23 @@ import { useDispatch, useSelector } from 'react-redux';
 import { useParams } from 'react-router-dom';
 import { getCoinDetails } from '../redux/CoinDetails/coinDetialsSlice';
 import '../styles/coinDetails.css';
+import '../styles/spinner.css';
 
-const CoinDetailsPage = () => {
+const CoinDetails = () => {
   const dispatch = useDispatch();
   const params = useParams();
-  const coinDetails = useSelector((state) => state.details.coinDetails);
+  const coinsData = useSelector((state) => state.details);
+  const { loading, coinDetails } = coinsData;
 
   useEffect(() => {
     dispatch(getCoinDetails(params.id));
   }, [dispatch, params.id]);
+
+  if (loading) {
+    return (
+      <div className="loader" />
+    );
+  }
 
   return (
     <div className="coin-details">
@@ -71,4 +79,4 @@ const CoinDetailsPage = () => {
   );
 };
 
-export default CoinDetailsPage;
+export default CoinDetails;

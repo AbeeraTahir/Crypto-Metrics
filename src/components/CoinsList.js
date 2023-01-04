@@ -5,10 +5,12 @@ import { getCoins } from '../redux/AllCoins/coinSlice';
 import banner from '../images/banner.jpg';
 import searchIcon from '../images/find.svg';
 import '../styles/coinsList.css';
+import '../styles/spinner.css';
 
 const CoinsList = () => {
   const dispatch = useDispatch();
-  const coins = useSelector((state) => state.coins.coinsData);
+  const coinsArray = useSelector((state) => state.coins);
+  const { loading, coinsData: coins } = coinsArray;
   const [search, setSearch] = useState('');
 
   useEffect(() => {
@@ -25,6 +27,12 @@ const CoinsList = () => {
   const searchedCoin = coins.filter((coin) => coin.name.toLowerCase()
     .match(search.toLowerCase()) || coin.symbol.toLowerCase()
     .match(search.toLowerCase()));
+
+  if (loading) {
+    return (
+      <div className="loader" />
+    );
+  }
 
   return (
     <div className="coins-container">

@@ -3,6 +3,7 @@
   display: flex;
   flex-direction: column;
   gap: 2.5em;
+  padding: 0.5em;
 }
 
 .coins-container > img {
@@ -14,8 +15,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 0 0.3em;
   padding: 1em 0.8em;
+  border-radius: 5px;
   background-color: white;
 }
 
@@ -36,7 +37,6 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
   gap: 0.5em;
-  padding: 0.5em;
 }
 
 .coin-card {
