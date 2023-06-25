@@ -14,10 +14,8 @@ const CoinsList = () => {
   const [search, setSearch] = useState('');
 
   useEffect(() => {
-    if (coins.length === 0) {
-      dispatch(getCoins());
-    }
-  }, [dispatch, coins.length]);
+    dispatch(getCoins());
+  }, [dispatch]);
 
   const handleChange = (e) => {
     e.preventDefault();
